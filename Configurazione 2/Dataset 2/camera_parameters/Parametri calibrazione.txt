@@ -1,0 +1,214 @@
+(misureContactless_env) PS C:\Users\lusen\OneDrive\Desktop> python .\multiple_realsense_visualizer_and_saver.py
+Found device:  Intel RealSense D435I   116622071830
+Found device:  Intel RealSense D435I   117322072431
+[INFO] Press ESC or Q to close the image window.
+[INFO] Save images and depth maps from both cameras by pressing S. Only one frame will be saved for each pressing.
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 0
+[INFO] Device 117322072431 - Saved image 0
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 1
+[INFO] Device 117322072431 - Saved image 1
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 2
+[INFO] Device 117322072431 - Saved image 2
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 3
+[INFO] Device 117322072431 - Saved image 3
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 4
+[INFO] Device 117322072431 - Saved image 4
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 5
+[INFO] Device 117322072431 - Saved image 5
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 6
+[INFO] Device 117322072431 - Saved image 6
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 7
+[INFO] Device 117322072431 - Saved image 7
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 8
+[INFO] Device 117322072431 - Saved image 8
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 9
+[INFO] Device 117322072431 - Saved image 9
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 10
+[INFO] Device 117322072431 - Saved image 10
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 11
+[INFO] Device 117322072431 - Saved image 11
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 12
+[INFO] Device 117322072431 - Saved image 12
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 13
+[INFO] Device 117322072431 - Saved image 13
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 14
+[INFO] Device 117322072431 - Saved image 14
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 15
+[INFO] Device 117322072431 - Saved image 15
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 16
+[INFO] Device 117322072431 - Saved image 16
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 17
+[INFO] Device 117322072431 - Saved image 17
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 18
+[INFO] Device 117322072431 - Saved image 18
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 117322072431
+Entered for device: 116622071830
+Entered for device: 117322072431
+[INFO] Device 116622071830 - Saved image 19
+[INFO] Device 117322072431 - Saved image 19
+[INFO] Program closing...
+(misureContactless_env) PS C:\Users\lusen\OneDrive\Desktop> python .\extrinsic_calibration_pipeline.py
+[WARNING] Keep in mind that the current directory MUST contain the test folder!
+[INFO] Current working directory is: C:\Users\lusen\OneDrive\Desktop
+[INFO] Found data from device ID: 116622071830
+[INFO] Found data from device ID: 117322072431
+[INFO] Computing intrinsics for camera 116622071830
+[INFO] Press s to skip the frame if the quality is poor
+-- Analyzing image 0
+++ Skipping frame 0
+-- Analyzing image 1
+-- Analyzing image 2
+++ Skipping frame 2
+-- Analyzing image 3
+-- Analyzing image 4
+-- Analyzing image 5
+++ Skipping frame 5
+-- Analyzing image 6
+-- Analyzing image 7
+-- Analyzing image 8
+-- Analyzing image 9
+-- Analyzing image 10
+-- Analyzing image 11
+-- Analyzing image 12
+++ Skipping frame 12
+-- Analyzing image 13
+++ Skipping frame 13
+-- Analyzing image 14
+-- Analyzing image 15
+-- Analyzing image 16
+-- Analyzing image 17
+-- Analyzing image 18
+-- Analyzing image 19
+=== CALIBRATION RESULTS ===
+RMSE: 0.2527247208081398
+Camera matrix K:
+ [[650.25690634   0.         267.04769936]
+ [  0.         652.2042796  191.1884634 ]
+ [  0.           0.           1.        ]]
+Distortion coeffs: [[ 0.17114758  0.07743448 -0.04157847 -0.03560645 -0.56209961]]
+===========================
+[INFO] Computing intrinsics for camera 117322072431
+[INFO] Press s to skip the frame if the quality is poor
+-- Analyzing image 0
+-- Analyzing image 1
+-- Analyzing image 2
+-- Analyzing image 3
+-- Analyzing image 4
+-- Analyzing image 5
+-- Analyzing image 6
+-- Analyzing image 7
+-- Analyzing image 8
+-- Analyzing image 9
+-- Analyzing image 10
+-- Analyzing image 11
+-- Analyzing image 12
+++ Skipping frame 12
+-- Analyzing image 13
+++ Skipping frame 13
+-- Analyzing image 14
+-- Analyzing image 15
+-- Analyzing image 16
+-- Analyzing image 17
+-- Analyzing image 18
+-- Analyzing image 19
+=== CALIBRATION RESULTS ===
+RMSE: 0.2752802996700883
+Camera matrix K:
+ [[664.51447074   0.         340.78721507]
+ [  0.         667.11827234 195.87932271]
+ [  0.           0.           1.        ]]
+Distortion coeffs: [[ 0.20778798 -0.14332396 -0.03621084  0.01423854  0.19004149]]
+===========================
+[INFO] Check the position of the red "O". If wrong, press s to skip the pair.
+[INFO] Stereo calibration starting. Resulting R and T will move points from camera 116622071830 into camera 117322072431 space
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+=== STEREO CAMERA RESULTS ===
+=== camera 116622071830 moved to camera 117322072431 ===
+RMSE:  0.34889944937543743
+Rotation matrix: [[ 0.69842453  0.33521783 -0.63232285]
+ [-0.39555964  0.91711687  0.04928712]
+ [ 0.59643587  0.21569806  0.77313556]]
+Translation matrix: [[ 4.62670450e-01]
+ [-2.82967742e-05]
+ [ 8.08940794e-02]]
+=============================
+Complete RT in homogeneous coordinates
+0.6984245312783727      0.33521782924887583     -0.6323228455957107     0.46267045046145205
+Traceback (most recent call last):
+  File "C:\Users\lusen\OneDrive\Desktop\extrinsic_calibration_pipeline.py", line 322, in <module>
+    R, T = stereo_calibrate(intrinsics[serials[0]][0], intrinsics[serials[0]][1],
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            intrinsics[serials[1]][0], intrinsics[serials[1]][1],
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            filenames[serials[0]], filenames[serials[1]],
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            calibration_settings)
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lusen\OneDrive\Desktop\extrinsic_calibration_pipeline.py", line 236, in stereo_calibrate
+    print(str(R[1,0]) + '\t' + str(R[1,1]) + '\t' + str(R[1,2]) + '\t' + str(T[0][1]))
+                                                                             ~~~~^^^
+IndexError: index 1 is out of bounds for axis 0 with size 1
