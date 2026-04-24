@@ -121,13 +121,9 @@ disp('Operazione completata! Controlla la qualità della fusione nel riquadro di
 
 
 
+%step 5 altra versione
 
 
-
-
-
-
-%% STEP 5: ISOLAMENTO ROI E ICP DEFINITIVO (Affinamento)
 clear; clc; close all;
 
 percorso_slave = '/Users/lucacampodonico/Desktop/Uni/CONTACTLESS/MisureContactless/Configurazione2/20260424_110710/116622071830_pointcloud_1.ply'; 
