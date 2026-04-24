@@ -23,10 +23,10 @@ xlabel('X'); ylabel('Y'); zlabel('Z');
 
 %% STEP 3.a: DA 3D A 2D (Depth Map e Immagine Convertita)
 % Usiamo i dati della Nuvola Slave (come nel tuo codice originale)
-fx = 600; 
-fy = 600; 
-ox = 320; 
-oy = 240; 
+fx = 605.0772793080158; 
+fy = 607.5798038078599; 
+ox = 292.73222663956017; 
+oy = 213.6601052699766; 
 img_width = 640;  
 img_height = 480; 
 
