@@ -1,1 +1,2 @@
 # MisureContactless
+* Esercitazione RealSense
