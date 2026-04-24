@@ -1,0 +1,112 @@
+(misureContactless_env) PS C:\Users\lusen\OneDrive\Desktop\20260417_103718> cd..
+(misureContactless_env) PS C:\Users\lusen\OneDrive\Desktop> python .\extrinsic_calibration_pipeline.py
+[WARNING] Keep in mind that the current directory MUST contain the test folder!
+[INFO] Current working directory is: C:\Users\lusen\OneDrive\Desktop
+[INFO] Found data from device ID: 116622071830
+[INFO] Found data from device ID: 117322072431
+[INFO] Computing intrinsics for camera 116622071830
+[INFO] Press s to skip the frame if the quality is poor
+-- Analyzing image 0
+++ Skipping frame 0
+-- Analyzing image 1
+++ Skipping frame 1
+-- Analyzing image 2
+++ Skipping frame 2
+-- Analyzing image 3
+++ Skipping frame 3
+-- Analyzing image 4
+-- Analyzing image 5
+-- Analyzing image 6
+-- Analyzing image 7
+++ Skipping frame 7
+-- Analyzing image 8
+++ Skipping frame 8
+-- Analyzing image 9
+-- Analyzing image 10
+-- Analyzing image 11
+++ Skipping frame 11
+-- Analyzing image 12
+++ Skipping frame 12
+-- Analyzing image 13
+-- Analyzing image 14
+++ Skipping frame 14
+-- Analyzing image 15
+++ Skipping frame 15
+-- Analyzing image 16
+=== CALIBRATION RESULTS ===
+RMSE: 0.11591676802000153
+Camera matrix K:
+ [[621.14154735   0.         310.74541541]
+ [  0.         623.20195477 205.83517113]
+ [  0.           0.           1.        ]]
+Distortion coeffs: [[ 0.08888431  0.55889719 -0.03366427 -0.00751553 -1.81533718]]
+===========================
+[INFO] Computing intrinsics for camera 117322072431
+[INFO] Press s to skip the frame if the quality is poor
+-- Analyzing image 0
+-- Analyzing image 1
+-- Analyzing image 2
+-- Analyzing image 3
+-- Analyzing image 4
+-- Analyzing image 5
+-- Analyzing image 6
+++ Skipping frame 6
+-- Analyzing image 7
+-- Analyzing image 8
+-- Analyzing image 9
+-- Analyzing image 10
+-- Analyzing image 11
+-- Analyzing image 12
+-- Analyzing image 13
+++ Skipping frame 13
+-- Analyzing image 14
+-- Analyzing image 15
+-- Analyzing image 16
+=== CALIBRATION RESULTS ===
+RMSE: 0.27589122316197684
+Camera matrix K:
+ [[605.07727931   0.         292.73222664]
+ [  0.         607.57980381 213.66010527]
+ [  0.           0.           1.        ]]
+Distortion coeffs: [[ 0.26523121 -0.69492199 -0.03500826 -0.01211917  1.03832276]]
+===========================
+[INFO] Check the position of the red "O". If wrong, press s to skip the pair.
+[INFO] Stereo calibration starting. Resulting R and T will move points from camera 116622071830 into camera 117322072431 space
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+++ Skipping coupled frames
+=== STEREO CAMERA RESULTS ===
+=== camera 116622071830 moved to camera 117322072431 ===
+RMSE:  0.43488788781816434
+Rotation matrix: [[-0.40491282  0.68898847 -0.60111605]
+ [-0.75778142  0.11503075  0.64228907]
+ [ 0.51167659  0.71558565  0.47552523]]
+Translation matrix: [[ 0.58126756]
+ [-0.50985878]
+ [ 0.35201821]]
+=============================
+Complete RT in homogeneous coordinates
+-0.40491281741887375    0.6889884653109863      -0.6011160494932086     0.5812675565619317
+Traceback (most recent call last):
+  File "C:\Users\lusen\OneDrive\Desktop\extrinsic_calibration_pipeline.py", line 322, in <module>
+    R, T = stereo_calibrate(intrinsics[serials[0]][0], intrinsics[serials[0]][1],
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            intrinsics[serials[1]][0], intrinsics[serials[1]][1],
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            filenames[serials[0]], filenames[serials[1]],
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            calibration_settings)
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lusen\OneDrive\Desktop\extrinsic_calibration_pipeline.py", line 236, in stereo_calibrate
+    print(str(R[1,0]) + '\t' + str(R[1,1]) + '\t' + str(R[1,2]) + '\t' + str(T[0][1]))
+                                                                             ~~~~^^^
+IndexError: index 1 is out of bounds for axis 0 with size 1
