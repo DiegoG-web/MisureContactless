@@ -1,0 +1,24 @@
+# Autosalvataggi e backup di MATLAB
+*.asv
+*~
+*.bak
+
+# File di dati (spesso pesanti, causano blocchi in Git)
+*.mat
+*.dat
+
+# File temporanei e di cache di Simulink
+slprj/
+*.slxc
+
+# File eseguibili MEX compilati (da ignorare perché dipendono dal PC)
+.mex
+
+# Cartelle di generazione codice e log
+codegen/
+*.log
+
+# File nascosti di sistema macOS
+.DS_Store
+.AppleDouble
+.LSOverride
